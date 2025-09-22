@@ -1,0 +1,13 @@
+[terminal.shell]
+program = "/home/linuxbrew/.linuxbrew/bin/zsh"
+args = ["--login"]
+
+[font]
+size = 10.0
+offset = { x = 1, y = 4 }
+glyph_offset = { x = 0, y = 0 }
+
+[window]
+padding = { x = 0, y = 0 }
+dynamic_padding = false
+
