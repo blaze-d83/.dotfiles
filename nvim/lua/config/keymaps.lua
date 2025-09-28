@@ -1,10 +1,10 @@
 -- Save and source
-vim.keymap.set("n", "<leader>ws", ":write<CR>")
-vim.keymap.set("n", "<leader>wq", ":wq<CR>")
-vim.keymap.set("n", "<leader>wo", ":update<CR> :source<CR>")
+vim.keymap.set("n", "<leader>ws", "<cmd>write<CR>")
+vim.keymap.set("n", "<leader>wq", "<cmd>wq<CR>")
+vim.keymap.set("n", "<leader>wo", "<cmd>update<CR> :source<CR>")
 
 -- Quit shortcut
-vim.keymap.set("n", "<leader>Q", ":q!<CR>")
+vim.keymap.set("n", "<leader>Q", "<cmd>q!<CR>")
 
 -- Highlight text on yank
 vim.api.nvim_create_autocmd("textyankpost", {
