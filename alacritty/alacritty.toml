@@ -4,8 +4,20 @@ args = ["--login"]
 
 [font]
 size = 12.0
-offset = { x = 1, y = 4 }
-glyph_offset = { x = 0, y = 0 }
+offset = { x = 1, y = 3 }
+glyph_offset = { x = 0, y = 2 }
+
+# [font.normal]
+# family = "UbuntuNerdFont"
+# style = "Regular"
+#
+# [font.bold]
+# family = "UbuntuNerdFont"
+# style = "Bold"
+#
+# [font.italic]
+# family = "UbuntuNerdFont"
+# style = "Italic"
 
 [window]
 padding = { x = 0, y = 0 }

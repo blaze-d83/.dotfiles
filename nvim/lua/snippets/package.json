@@ -6,7 +6,8 @@
       { "language": ["python"], "path": "./python/base.json" },
       { "language": ["python"], "path": "./python/fastapi.json" },
       { "language": ["python"], "path": "./python/pydoc.json" },
-      { "language": ["python"], "path": "./python/unittest.json" }
+      { "language": ["python"], "path": "./python/unittest.json" },
+      { "language": ["python"], "path": "./python/django.json" }
     ]
   }
 }
