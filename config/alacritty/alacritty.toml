@@ -1,0 +1,45 @@
+[window]
+startup_mode = "Windowed"
+decorations = "None"
+opacity = 1.0
+dynamic_title = true
+
+[window.padding]
+x = 12
+y = 10
+
+[font]
+size = 14.5
+
+[font.normal]
+family = "Iosevka Nerd Font"
+
+[font.bold]
+family = "Iosevka Nerd Font"
+
+[font.italic]
+family = "Iosevka Nerd Font"
+
+[font.bold_italic]
+family = "Iosevka Nerd Font"
+
+[font.offset]
+x = 0
+y = 0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[keyboard]
+bindings = [
+{ key = "F11", action = "ToggleFullscreen"},
+{ key = "C", mods = "Control|Shift", action = "Copy"},
+{ key = "V", mods = "Control|Shift", action = "Paste"},
+{ key = "Equals", mods = "Control", action = "IncreaseFontSize"},
+{ key = "Minus", mods = "Control", action = "DecreaseFontSize"},
+]
+
+[scrolling]
+history = 2000
+

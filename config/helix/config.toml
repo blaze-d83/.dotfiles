@@ -1,0 +1,20 @@
+theme = "base16_default_dark"
+
+[editor]
+line-number = "relative"
+cursorline =  false
+bufferline = "never"
+color-modes = false
+auto-format = false
+idle-timeout = 400
+completion-trigger-len = 2
+scrolloff = 3
+
+[editor.statusline]
+left = ["mode", "file-name"]
+center = []
+right = ["position"]
+
+[editor.lsp]
+display-inlay-hints = false
+display-signature-help-docs = false
