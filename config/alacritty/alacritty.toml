@@ -36,6 +36,7 @@ bindings = [
 { key = "F11", action = "ToggleFullscreen"},
 { key = "C", mods = "Control|Shift", action = "Copy"},
 { key = "V", mods = "Control|Shift", action = "Paste"},
+{ key = "Return", mods = "Control|Shift", action = "SpawnNewInstance"},
 { key = "Equals", mods = "Control", action = "IncreaseFontSize"},
 { key = "Minus", mods = "Control", action = "DecreaseFontSize"},
 ]
