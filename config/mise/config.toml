@@ -1,4 +1,5 @@
 [tools]
+aws = { version = "latest", symlink_bins = "true" }
 bob = "latest"
 fd = "latest"
 fzf = "latest"
@@ -8,7 +9,9 @@ lazygit = "latest"
 node = "22"
 python = "latest"
 ripgrep = "latest"
-rust = "stable"
+rust = "latest"
+terraform = "latest"
+terraform-ls = "latest"
 tmux = "latest"
 tree-sitter = "latest"
 uv = "latest"

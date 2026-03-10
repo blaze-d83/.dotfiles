@@ -1,9 +1,34 @@
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[laguage-server.scls.config]
+feature_words = false
+feature_snippets = true
+snippets_first = true
+snippets_inline_by_word_tail = false
+feature_unicode_input = false
+feature_paths = false
+feature_citations = false
+
+# write logs to /tmp/completion.log
+[language-server.scls.environment]
+RUST_LOG = "info,simple-completion-language-server=info"
+LOG_FILE = "/tmp/completion.log"
+
+[[sources.paths]]
+scope = ["python_scope"]
+path = "./snippets/python.toml"
+
 [[language]]
 name = "python"
-language-servers = ["pyrefly"]
+language-servers = ["ty","scls"]
 formatter = { command = "ruff", args = ["format", '-']}
 auto-format = true
 
-[language-server.pyrefly]
-command = "pyrefly"
-args = ["lsp"]
+[language-server.ty]
+command = "ty"
+args = ["server"]
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "scls"]
