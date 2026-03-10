@@ -1,5 +1,33 @@
 [[snippets]]
-prefix = "ld"
+prefix = "sep"
+scope = ["python"]
+body = "# ── ${1:section} ────────────────────────────────────────────────────────────"
+description = "Section separator"
+
+[[snippets]]
+prefix = "sep2"
+scope = ["python"]
+body = """
+# ══════════════════════════════════════════════════════════════════════════════
+# ${1:Section Title}
+# ══════════════════════════════════════════════════════════════════════════════
+"""
+description = "Major section block"
+
+[[snippets]]
+prefix = "todo"
 scope = [ "python" ]
-body = 'log.debug("$1")'
-description = "log at debug level"
+body = "# TODO(${1:who}): ${2:what}"
+description = "TODO comment"
+
+[[snippets]]
+prefix = "fixme"
+scope = [ "python" ]
+body = "# FIXME(${1:who}): ${2:what}"
+description = "FIXME comment"
+
+[[snippets]]
+prefix = "note"
+scope = [ "python" ]
+body = "# NOTE: ${1:explanation}"
+description = "NOTE comment"

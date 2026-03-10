@@ -1,0 +1,8 @@
+feature_words = false
+feature_snippets = true
+snippets_first = true
+snippets_inline_by_word_tail = false
+feature_unicode_input = false
+feature_paths = false
+feature_citations = false
+
