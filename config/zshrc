@@ -13,6 +13,7 @@ alias nvimcfg="cd ~/.dotfiles/config/nvim"
 alias nightlycfg="cd ~/.config/nvim-nightly"
 alias alacfg="nvim ~/.dotfiles/config/alacritty/alacritty.toml"
 alias hxcfg="cd ~/.dotfiles/config/helix"
+alias yz="yazi"
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
@@ -145,6 +146,6 @@ notes() {
 	local file
 	file=$(fd --type f . "$dir" | fzf)
 	if [[ -n "$file" ]]; then
-		nvim "$file"
+		hx "$file"
 	fi
 }

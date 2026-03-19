@@ -24,8 +24,8 @@ family = "Iosevka Nerd Font"
 family = "Iosevka Nerd Font"
 
 [font.offset]
-x = 0
-y = 0
+x = 1
+y = 2
 
 [font.glyph_offset]
 x = 0

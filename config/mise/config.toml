@@ -1,6 +1,7 @@
 [tools]
 aws = { version = "latest", symlink_bins = "true" }
 bob = "latest"
+dprint = "latest"
 fd = "latest"
 fzf = "latest"
 go = "latest"

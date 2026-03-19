@@ -1,3 +1,5 @@
+
+# Simple Completion Server
 [language-server.scls]
 command = "simple-completion-language-server"
 
@@ -5,6 +7,7 @@ command = "simple-completion-language-server"
 RUST_LOG = "info,simple-completion-language-server=info"
 LOG_FILE = "/tmp/completion.log"
 
+# Python
 [[language]]
 name = "python"
 language-servers = ["ty","scls"]
@@ -15,6 +18,48 @@ auto-format = true
 command = "ty"
 args = ["server"]
 
+# Rust
 [[language]]
 name = "rust"
+file-types = ["rs"]
+roots = ["Cargo.toml", "Cargo.lock"]
 language-servers = ["rust-analyzer", "scls"]
+formatter = { command = "rustfmt", args = ["--edition", "2024"] }
+auto-format = false
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+inlayHints.bindingModeHints.enable = false
+inlayHints.closingBraceHints.minLines = 10
+inlayHints.closureReturnTypeHints.enable = "with_block"
+inlayHints.discriminantHints.enable = "fieldless"
+inlayHints.lifetimeElisionHints = "skip_trivial"
+inlayHints.typeHints.hideClosureInitialization = false
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+# Web dev
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
+
+# Go language server and formatter
+[[language]]
+name = "go"
+language-servers = ["gopls"]
+formatter = { command = "gofmt" }
+
+[language-server.gopls]
+command = "gopls"
+args = ["-logfile=/tmp/gopls.log", "serve"]
+
+[language-server.gopls.config]
+"ui.diagnostic.staticcheck" = true
+
+[[language]]
+name = "markdown"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+
