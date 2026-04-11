@@ -1,3 +1,10 @@
+HISTSIZE=5000
+SAVEHIST=5000
+
+setopt APPEND_HISTORY
+setopt INC_APPEND_HISTORY
+setopt HIST_FCNTL_LOCK
+
 export MISE_DISABLE_PATH_CHECK=1
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(mise activate zsh)"
@@ -144,7 +151,7 @@ nightly() {
 notes() {
 	local dir="$HOME/notes"
 	local file
-	file=$(fd --type f . "$dir" | fzf)
+	file=$(fd --type f --max-depth 2 . "$dir" | fzf)
 	if [[ -n "$file" ]]; then
 		hx "$file"
 	fi
